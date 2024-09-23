@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="assents/css/style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <title>Calculadora de IMC</title>
+</head>
+<body>
+    
+    <header>
+        <nav class="nav-bar">
+            <div class="logo">
+                <h1>logo</h1>
+            </div>
+
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="index.html" class="nav-link">Inicio</a></li>
+                    <li class="nav-item"><a href="alimentacao.html" class="nav-link">Alimentação Saudavel</a></li>
+                    <li class="nav-item"><a href="exercicios.html" class="nav-link">Exercicios</a></li>
+                    <li class="nav-item"><a href="calculadora.html" class="nav-link">Calculadora</a></li>
+                </ul>
+            </div>
+
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="assents/images/menu.svg"></button>
+            </div>
+        </nav>
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="index.html" class="nav-link">Inicio</a></li>
+                <li class="nav-item"><a href="alimentacao.html" class="nav-link">Alimentação Saudavel</a></li>
+                <li class="nav-item"><a href="exercicios.html" class="nav-link">Exercicios</a></li>
+                <li class="nav-item"><a href="calculadora.html" class="nav-link">Calculadora</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <h1>  </h1>
+    
+    <main id="container">
+        <section id="img">
+            <img src="assents/images/ilustração.svg">
+        </section>
+        <section id="calculadora">
+            <form id="form">
+                <h1 id="title">
+                    Calculadora IMC
+                </h1>
+
+                <div class="input-box">
+                    <label for="weight">
+                      Peso em Kg  
+                    </label>
+                    <div class="input-field">
+                        <i class="fa-solid fa-scale-balanced"></i>
+                        <input type="number" id="weight" required>
+                        <span>
+                            Kg
+                        </span>
+                    </div>
+                </div>
+
+                <div class="input-box">
+                    <label for="height">
+                    Altura em metros  
+                  </label>
+
+                    <div class="input-field">
+                        <i class="fa-solid fa-ruler-vertical"></i>
+                        <input type="number" step="0.01" id="height" required>
+                        <span>
+                            m
+                        </span>
+                    </div>
+                </div>
+                <button id="calcular">
+                    calcular
+                </button>
+            </form>
+
+            <div id="infos" class="hidden">
+                <div id="resultados">
+                    <div id="imc">
+                        <span id="value"></span>
+                        <span>Seu IMC</span>
+                    </div>
+                    <div id="descricao">
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <script src="assents/js/script.js"></script>
+</body>
+</html>
