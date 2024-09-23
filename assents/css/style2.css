@@ -15,14 +15,6 @@ header {
     padding: 1.5rem 6rem;
 }
 
-.logo {
-    display: flex;
-    align-items: center;
-}
-
-.logo h1 {
-    color: #fff;
-}
 
 .nav-list {
     display: flex;
